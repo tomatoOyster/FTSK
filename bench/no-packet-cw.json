@@ -1,0 +1,18 @@
+{
+  "mode": "cw",
+  "seed": 88012,
+  "input_s": 3600.0,
+  "wall_s": 182.2609048000013,
+  "samples": 460800000,
+  "timings_examined": 460798976,
+  "prescreen_hits": 0,
+  "candidate_headers": 0,
+  "crc_passing_packets": 0,
+  "earliest_false": [],
+  "zero_count_poisson_upper_95_per_hour": 2.9957322735539904,
+  "sha256": {
+    "fast_acquire.py": "a220186dc3a8d807750d01807602bbb27a4dbb7ee15f6780bba00979e0d5737d",
+    "frame.py": "e43d2d2600ef9df58834d42266326c45ef7518ffb4bc37e477c7b78a67d01bfd",
+    "receiver.py": "751fc5f3908e00f7167e349a2b1f76e5e325c3bf21b146d0b56224b5aa0efed5"
+  }
+}

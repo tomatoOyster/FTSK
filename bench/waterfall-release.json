@@ -1,0 +1,203 @@
+{
+  "trials_per_level": 1200,
+  "snr_db_per_complex_sample": [
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    -4
+  ],
+  "seed": 9020,
+  "seconds": 270.5309999999881,
+  "sha256": {
+    "frame.py": "e43d2d2600ef9df58834d42266326c45ef7518ffb4bc37e477c7b78a67d01bfd",
+    "receiver.py": "751fc5f3908e00f7167e349a2b1f76e5e325c3bf21b146d0b56224b5aa0efed5",
+    "fast_acquire.py": "a220186dc3a8d807750d01807602bbb27a4dbb7ee15f6780bba00979e0d5737d",
+    "ftsk_demo.py": "4532f390c20146743783f194f131a175fc34d322a5260573e92b89ac34569bbe"
+  },
+  "paired_disagreements": {
+    "-9": {
+      "only_exhaustive": 1,
+      "only_fast": 0
+    },
+    "-8": {
+      "only_exhaustive": 15,
+      "only_fast": 0
+    },
+    "-7": {
+      "only_exhaustive": 4,
+      "only_fast": 0
+    },
+    "-6": {
+      "only_exhaustive": 0,
+      "only_fast": 0
+    },
+    "-5": {
+      "only_exhaustive": 0,
+      "only_fast": 0
+    },
+    "-4": {
+      "only_exhaustive": 0,
+      "only_fast": 0
+    }
+  },
+  "results": {
+    "-9": {
+      "exhaustive": {
+        "ok": 9,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 1191,
+        "per": 0.9925,
+        "wilson95": [
+          0.9858076084338078,
+          0.9960492559724986
+        ]
+      },
+      "fast": {
+        "ok": 8,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 1192,
+        "per": 0.9933333333333333,
+        "wilson95": [
+          0.9869001244145466,
+          0.9966180883240883
+        ]
+      }
+    },
+    "-8": {
+      "exhaustive": {
+        "ok": 257,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 943,
+        "per": 0.7858333333333334,
+        "wilson95": [
+          0.7617291045184305,
+          0.8081133734703396
+        ]
+      },
+      "fast": {
+        "ok": 242,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 958,
+        "per": 0.7983333333333333,
+        "wilson95": [
+          0.7746954857862485,
+          0.820067217187453
+        ]
+      }
+    },
+    "-7": {
+      "exhaustive": {
+        "ok": 871,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 329,
+        "per": 0.27416666666666667,
+        "wilson95": [
+          0.24967765563735786,
+          0.30009694630154404
+        ]
+      },
+      "fast": {
+        "ok": 867,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 333,
+        "per": 0.2775,
+        "wilson95": [
+          0.25290624744298096,
+          0.3035137478252361
+        ]
+      }
+    },
+    "-6": {
+      "exhaustive": {
+        "ok": 1154,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 46,
+        "per": 0.03833333333333333,
+        "wilson95": [
+          0.028861058693224424,
+          0.05075196519663399
+        ]
+      },
+      "fast": {
+        "ok": 1154,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 46,
+        "per": 0.03833333333333333,
+        "wilson95": [
+          0.028861058693224424,
+          0.05075196519663399
+        ]
+      }
+    },
+    "-5": {
+      "exhaustive": {
+        "ok": 1197,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 3,
+        "per": 0.0025,
+        "wilson95": [
+          0.0008505818993887943,
+          0.0073244637003322816
+        ]
+      },
+      "fast": {
+        "ok": 1197,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 3,
+        "per": 0.0025,
+        "wilson95": [
+          0.0008505818993887943,
+          0.0073244637003322816
+        ]
+      }
+    },
+    "-4": {
+      "exhaustive": {
+        "ok": 1200,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 0,
+        "per": 0.0,
+        "wilson95": [
+          0,
+          0.0031910006027347487
+        ]
+      },
+      "fast": {
+        "ok": 1200,
+        "wrong_or_duplicate": 0,
+        "header_hit_payload_mismatch": 0,
+        "trials": 1200,
+        "errors": 0,
+        "per": 0.0,
+        "wilson95": [
+          0,
+          0.0031910006027347487
+        ]
+      }
+    }
+  }
+}

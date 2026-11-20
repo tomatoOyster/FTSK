@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# 本机构建产物（源码随仓库分发，二进制不提交）
+*.exe
+*.o
+*.obj
+build/
+
+# 由源码重新生成的发布压缩包
+FTSK-*-source.zip
+ftsk4-v1.zip
+
+# 本地收发与录音产物
+*.cf32
+!example.cf32
+message.*
+captured*
+*.json.zip

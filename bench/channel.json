@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "seed": 481516,
+  "zip_sha256": "93e54686e83fe8c3c994b0c79e80d913be1335a356e5fcd19646a9a31df88223",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "logical_cpus": 20,
+  "channel": {
+    "fir_gain_db": {
+      "60000": -0.046,
+      "62000": -1.154,
+      "64000": -6.021,
+      "65000": -10.886,
+      "66000": -18.099,
+      "68000": -45.529
+    },
+    "conditions": [
+      {
+        "cfo_hz": 0,
+        "clock_ppm": 0,
+        "snr_db": -6,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 95,
+        "device_ok": 92,
+        "base_only": 3,
+        "device_only": 0
+      },
+      {
+        "cfo_hz": 6000,
+        "clock_ppm": 0,
+        "snr_db": -6,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 89,
+        "device_ok": 80,
+        "base_only": 16,
+        "device_only": 7
+      },
+      {
+        "cfo_hz": -6000,
+        "clock_ppm": 0,
+        "snr_db": -6,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 92,
+        "device_ok": 58,
+        "base_only": 35,
+        "device_only": 1
+      },
+      {
+        "cfo_hz": 5850,
+        "clock_ppm": 0,
+        "snr_db": -6,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 89,
+        "device_ok": 78,
+        "base_only": 18,
+        "device_only": 7
+      },
+      {
+        "cfo_hz": 4000,
+        "clock_ppm": 0,
+        "snr_db": -6,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 93,
+        "device_ok": 83,
+        "base_only": 11,
+        "device_only": 1
+      },
+      {
+        "cfo_hz": 6000,
+        "clock_ppm": 0,
+        "snr_db": -3,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 96,
+        "device_ok": 91,
+        "base_only": 5,
+        "device_only": 0
+      },
+      {
+        "cfo_hz": -6000,
+        "clock_ppm": 0,
+        "snr_db": -3,
+        "payload": "zeros",
+        "trials": 96,
+        "base_ok": 96,
+        "device_ok": 0,
+        "base_only": 96,
+        "device_only": 0
+      },
+      {
+        "cfo_hz": -6000,
+        "clock_ppm": 0,
+        "snr_db": 15,
+        "payload": "zeros",
+        "trials": 96,
+        "base_ok": 96,
+        "device_ok": 96,
+        "base_only": 0,
+        "device_only": 0
+      },
+      {
+        "cfo_hz": 6000,
+        "clock_ppm": 0,
+        "snr_db": 15,
+        "payload": "ff",
+        "trials": 96,
+        "base_ok": 96,
+        "device_ok": 96,
+        "base_only": 0,
+        "device_only": 0
+      },
+      {
+        "cfo_hz": 4575,
+        "clock_ppm": 5,
+        "snr_db": -3,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 96,
+        "device_ok": 93,
+        "base_only": 3,
+        "device_only": 0
+      },
+      {
+        "cfo_hz": 9150,
+        "clock_ppm": 10,
+        "snr_db": 15,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 0,
+        "device_ok": 0,
+        "base_only": 0,
+        "device_only": 0
+      },
+      {
+        "cfo_hz": 18300,
+        "clock_ppm": 20,
+        "snr_db": 15,
+        "payload": "random",
+        "trials": 96,
+        "base_ok": 0,
+        "device_ok": 0,
+        "base_only": 0,
+        "device_only": 0
+      }
+    ]
+  }
+}

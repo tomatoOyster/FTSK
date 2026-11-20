@@ -1,0 +1,156 @@
+{
+  "rate": 1024000,
+  "mtu": 8192,
+  "block_duration_ms": 8.0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "input_seconds": 1.971,
+  "repeats": 7,
+  "simulated": true,
+  "sha256": {
+    "fast_acquire.py": "a220186dc3a8d807750d01807602bbb27a4dbb7ee15f6780bba00979e0d5737d",
+    "radio.py": "12f04abd0c480f0b2bf9418e82ea475b106918e4121fbebbbab44f8f70524e85",
+    "receiver.py": "f6f164c53e935aa42a25772242e11fbda867a2dd38f409ad277fda994c59475e",
+    "frame.py": "e43d2d2600ef9df58834d42266326c45ef7518ffb4bc37e477c7b78a67d01bfd"
+  },
+  "results": {
+    "noise": {
+      "runs": [
+        {
+          "cpu_s": 0.59375,
+          "wall_s": 0.6118892000085907,
+          "throughput_x": 3.221171414648809,
+          "block_p99_ms": 3.8011400011600913,
+          "max_ms": 4.217499998048879,
+          "packets": 0,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.4375,
+          "wall_s": 0.46447039999475237,
+          "throughput_x": 4.24354275325676,
+          "block_p99_ms": 3.4291040035896003,
+          "max_ms": 3.503699990687892,
+          "packets": 0,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.453125,
+          "wall_s": 0.4622951000055764,
+          "throughput_x": 4.263510471939298,
+          "block_p99_ms": 3.6395540047669774,
+          "max_ms": 4.613900004187599,
+          "packets": 0,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.5,
+          "wall_s": 0.5065395999990869,
+          "throughput_x": 3.891107427738232,
+          "block_p99_ms": 3.4583040047436917,
+          "max_ms": 3.9641000039409846,
+          "packets": 0,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.484375,
+          "wall_s": 0.5086889999947743,
+          "throughput_x": 3.8746660533651163,
+          "block_p99_ms": 3.2677919947309415,
+          "max_ms": 3.609299994423054,
+          "packets": 0,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.46875,
+          "wall_s": 0.5009946999925887,
+          "throughput_x": 3.9341733555847145,
+          "block_p99_ms": 3.4317699953680854,
+          "max_ms": 3.4974000009242445,
+          "packets": 0,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.5,
+          "wall_s": 0.49107679999724496,
+          "throughput_x": 4.013628825493401,
+          "block_p99_ms": 3.2965840076212762,
+          "max_ms": 4.503300006035715,
+          "packets": 0,
+          "all_match": true
+        }
+      ],
+      "median_throughput_x": 3.9341733555847145,
+      "median_block_p99_ms": 3.4317699953680854
+    },
+    "consecutive_packets": {
+      "runs": [
+        {
+          "cpu_s": 0.78125,
+          "wall_s": 0.8121020999969915,
+          "throughput_x": 2.4270347287703133,
+          "block_p99_ms": 6.652387995563911,
+          "max_ms": 8.830800012219697,
+          "packets": 54,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.734375,
+          "wall_s": 0.7828699999954551,
+          "throughput_x": 2.517659381521124,
+          "block_p99_ms": 6.200499999977181,
+          "max_ms": 6.896200007759035,
+          "packets": 54,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.75,
+          "wall_s": 0.7614616000064416,
+          "throughput_x": 2.5884430678885533,
+          "block_p99_ms": 6.304238003212954,
+          "max_ms": 7.500399995478801,
+          "packets": 54,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.78125,
+          "wall_s": 0.823988800009829,
+          "throughput_x": 2.3920228041649216,
+          "block_p99_ms": 6.540237999288365,
+          "max_ms": 7.4142999947071075,
+          "packets": 54,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.890625,
+          "wall_s": 0.8992195000028005,
+          "throughput_x": 2.1919008651323306,
+          "block_p99_ms": 7.716415999457236,
+          "max_ms": 11.118599999463186,
+          "packets": 54,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.8125,
+          "wall_s": 0.8069520999997621,
+          "throughput_x": 2.4425241597370912,
+          "block_p99_ms": 6.773647999216334,
+          "max_ms": 7.0906000037211925,
+          "packets": 54,
+          "all_match": true
+        },
+        {
+          "cpu_s": 0.8125,
+          "wall_s": 0.8196256999945035,
+          "throughput_x": 2.4047562198369548,
+          "block_p99_ms": 6.018081999209243,
+          "max_ms": 6.909000003361143,
+          "packets": 54,
+          "all_match": true
+        }
+      ],
+      "median_throughput_x": 2.4270347287703133,
+      "median_block_p99_ms": 6.540237999288365
+    }
+  }
+}

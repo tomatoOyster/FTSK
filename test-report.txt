@@ -1,0 +1,95 @@
+{'path': 'C:\\Users\\1\\AppData\\Local\\Temp\\tmpq1vaavm5\\candidate.zip', 'entries': 79, 'bytes': 157405, 'sha256': '0972830d9ffd499f9fd95ace90440c89e924a9135173b04d93266fc0f3f2bc6f'}
+> C:\Users\1\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe -m unittest discover -v
+test_base_and_profile_no_partial_commit (test_audit_io.FiniteIQTests.test_base_and_profile_no_partial_commit) ... ok
+test_device_input_before_split (test_audit_io.FiniteIQTests.test_device_input_before_split) ... ok
+test_packet_cli (test_audit_io.FiniteIQTests.test_packet_cli) ... ok
+test_clock_offset_before_downsampling (test_calibration.CalibrationTest.test_clock_offset_before_downsampling) ... ok
+test_hardware_timestamp_gap (test_capture.CaptureTest.test_hardware_timestamp_gap) ... ok
+test_record_replay_sidecar (test_capture.CaptureTest.test_record_replay_sidecar) ... ok
+test_known_echo_replay (test_equalizer.EqualizerTests.test_known_echo_replay) ... ok
+test_preserves_clean_packet (test_equalizer.EqualizerTests.test_preserves_clean_packet) ... ok
+test_rejects_invalid_crc_and_noise (test_equalizer.EqualizerTests.test_rejects_invalid_crc_and_noise) ... ok
+test_false_gates (test_fast_acquire.FastTests.test_false_gates) ... ok
+test_fft_decimation (test_fast_acquire.FastTests.test_fft_decimation) ... ok
+test_paired_capture (test_fast_acquire.FastTests.test_paired_capture) ... ok
+test_wide_edges (test_fast_acquire.FastTests.test_wide_edges) ... ok
+test_conditioned_on_archived_rejection (test_impulse.ImpulseRegression.test_conditioned_on_archived_rejection) ... ok
+test_encoder_identical (test_impulse.ImpulseRegression.test_encoder_identical) ... ok
+test_wrong_crc_with_real_outlier (test_impulse.ImpulseRegression.test_wrong_crc_with_real_outlier) ... ok
+test_duplicates_foreign_and_missed (test_linktest.LinkTest.test_duplicates_foreign_and_missed) ... ok
+test_file_normal_entries (test_linktest.LinkTest.test_file_normal_entries) ... ok
+test_adjacent_packets_after_corruption (test_packets.PacketTests.test_adjacent_packets_after_corruption) ... ok
+test_crc_and_pad (test_packets.PacketTests.test_crc_and_pad) ... ok
+test_impulsive_slot (test_packets.PacketTests.test_impulsive_slot) ... ok
+test_noise_and_truncation (test_packets.PacketTests.test_noise_and_truncation) ... ok
+test_unknown_offset_phase_and_chunking (test_packets.PacketTests.test_unknown_offset_phase_and_chunking) ... ok
+test_wire_vector (test_packets.PacketTests.test_wire_vector) ... ok
+test_atomic_cli_and_aliases (test_profile_io.ProfileIO.test_atomic_cli_and_aliases) ... ok
+test_file_cli (test_profile_io.ProfileIO.test_file_cli) ... ok
+test_memory_radio (test_profile_io.ProfileIO.test_memory_radio) ... ok
+test_receiver_options (test_profile_io.ProfileIO.test_receiver_options) ... ok
+test_bad_slow_then_valid_fast_at_eof (test_profiles.DualProfileTests.test_bad_slow_then_valid_fast_at_eof) ... ok
+test_mixed_adjacent_noise_cfo (test_profiles.DualProfileTests.test_mixed_adjacent_noise_cfo) ... ok
+test_noise_and_eight_slot_errors (test_profiles.DualProfileTests.test_noise_and_eight_slot_errors) ... ok
+test_wire_compatibility (test_profiles.DualProfileTests.test_wire_compatibility) ... ok
+test_polyphase_and_streaming_decimator (test_radio.RadioTests.test_polyphase_and_streaming_decimator) ... ok
+test_reads_with_timeout_and_short_buffers (test_radio.RadioTests.test_reads_with_timeout_and_short_buffers) ... ok
+test_short_writes_and_end_marker (test_radio.RadioTests.test_short_writes_and_end_marker) ... ok
+test_stream_cleanup_and_rate_verification (test_radio.RadioTests.test_stream_cleanup_and_rate_verification) ... ok
+test_timeout_and_device_error (test_radio.RadioTests.test_timeout_and_device_error) ... ok
+test_two_cli_commands_via_memory_device (test_radio.RadioTests.test_two_cli_commands_via_memory_device) ... ok
+test_burst_with_erased_frames (test_radio_file.FileRadioTests.test_burst_with_erased_frames) ... ok
+test_driver_disconnect_preserves_destination (test_radio_file.FileRadioTests.test_driver_disconnect_preserves_destination) ... ok
+test_two_erased_in_same_group_preserves_destination (test_radio_file.FileRadioTests.test_two_erased_in_same_group_preserves_destination) ... ok
+test_iq_publish_fsync_failure_and_default_no_overwrite (test_safeoutput.SafeOutputTest.test_iq_publish_fsync_failure_and_default_no_overwrite) ... ok
+test_malformed_sidecar (test_safeoutput.SafeOutputTest.test_malformed_sidecar) ... ok
+test_no_partial_link_probes (test_safeoutput.SafeOutputTest.test_no_partial_link_probes) ... ok
+test_packet_and_profile_refuse_alias_even_with_force (test_safeoutput.SafeOutputTest.test_packet_and_profile_refuse_alias_even_with_force) ... ok
+test_baseline_passthrough (test_tracking_rx.TrackingTests.test_baseline_passthrough) ... ok
+test_high_drift (test_tracking_rx.TrackingTests.test_high_drift) ... ok
+test_long_echo_recovery (test_tracking_rx.TrackingTests.test_long_echo_recovery) ... ok
+test_noise_only (test_tracking_rx.TrackingTests.test_noise_only) ... ok
+test_boundaries_reorder_duplicates_loss (test_transfer.TransferTests.test_boundaries_reorder_duplicates_loss) ... ok
+test_bounds_and_ids (test_transfer.TransferTests.test_bounds_and_ids) ... ok
+test_cli_iq_and_no_clobber (test_transfer.TransferTests.test_cli_iq_and_no_clobber) ... {"transfer_id": "4654313233", "frames": 10, "iq_bytes": 358400}
+FTSK transfer: output exists: C:\Users\1\AppData\Local\Temp\tmparv52ovj\result
+FTSK transfer: incomplete CF32 sample at EOF
+ok
+test_file_integrity_and_atomic_failure (test_transfer.TransferTests.test_file_integrity_and_atomic_failure) ... ok
+test_input_changed (test_transfer.TransferTests.test_input_changed) ... ok
+test_parity_loss_and_partial_last_group_rank (test_transfer.TransferTests.test_parity_loss_and_partial_last_group_rank) ... ok
+test_recover_file_at_large_unknown_offset (test_wide_file.WideFileTest.test_recover_file_at_large_unknown_offset) ... ok
+test_coverage_and_validation (test_wide_rx.WideTests.test_coverage_and_validation) ... ok
+test_edges_overlap_and_adjacent_packets (test_wide_rx.WideTests.test_edges_overlap_and_adjacent_packets) ... ok
+test_noise (test_wide_rx.WideTests.test_noise) ... ok
+
+----------------------------------------------------------------------
+Ran 59 tests in 32.772s
+
+OK
+{"bytes": 89, "transfer_id": "4654313233", "sha256": "7d1978a65ac94dbbcdc62e3d81850299fe157dd9b7bd9e01b170156210d2815a", "recovered": 0, "duplicates": 2}
+> C:\Users\1\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe selftest.py
+{
+  "numpy": "2.3.5",
+  "golden_vector_samples": 4480,
+  "verified_file_bytes": 259,
+  "sha256": "80e4c3ff2a9bb173fbf3a626271fb66e113d0613906737f11be1d28627c8bf22",
+  "physical_radio_used": false
+}
+> g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic cpp/ftsk.cpp -o C:\Users\1\AppData\Local\Temp\tmp_pkrljdf\work\cpp\ftsk.exe
+> C:\Users\1\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe cpp/test_interop.py C:\Users\1\AppData\Local\Temp\tmp_pkrljdf\work\cpp\ftsk.exe
+test_bad_inputs (__main__.Interop.test_bad_inputs) ... ok
+test_both_directions (__main__.Interop.test_both_directions) ... ok
+test_golden_vector (__main__.Interop.test_golden_vector) ... ok
+test_preserve_existing_and_invalid_paths (__main__.Interop.test_preserve_existing_and_invalid_paths) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 12.168s
+
+OK
+> C:\Users\1\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\python\python.exe cpp/test_blind.py C:\Users\1\AppData\Local\Temp\tmp_pkrljdf\work\cpp\ftsk.exe
+SNR=-8: native=7/36, Python=7/36
+SNR=-6: native=36/36, Python=36/36
+SNR=-3: native=36/36, Python=36/36
+4 s pure complex Gaussian noise, no packets; 0.154s wall, 26.01x realtime (file I/O included)
+CRC rejection, adjacent repeated payloads, EOF, timestamps, chunk sizes and truncated IQ passed

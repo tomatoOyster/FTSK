@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "seed": 481516,
+  "zip_sha256": "93e54686e83fe8c3c994b0c79e80d913be1335a356e5fcd19646a9a31df88223",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "logical_cpus": 20,
+  "timing": {
+    "noise_rx": {
+      "wall_s_per_iq_second_min_med_max": [
+        0.7931567999912659,
+        0.8480985000060173,
+        0.9823440999898594
+      ],
+      "process_cpu_s_per_iq_second_median": 0.828125,
+      "samples_per_wall_second": 150925,
+      "realtime_x": 1.1791083229045978,
+      "chunk_p99_ms_median": 10.087891996372491,
+      "worst_chunk_ms": 12.421199993696064
+    },
+    "dense_rx": {
+      "wall_s_per_iq_second_min_med_max": [
+        0.8473057000082918,
+        0.868641299995943,
+        0.8777923000016017
+      ],
+      "process_cpu_s_per_iq_second_median": 0.859375,
+      "samples_per_wall_second": 147356,
+      "realtime_x": 1.151223180390652,
+      "chunk_p99_ms_median": 10.793680005008355,
+      "worst_chunk_ms": 15.7043000072008
+    },
+    "decimator": {
+      "wall_s_per_iq_second_min_med_max": [
+        1.267834500002209,
+        1.2905663999990793,
+        1.373911099988618
+      ],
+      "process_cpu_s_per_iq_second_median": 1.265625,
+      "samples_per_wall_second": 793450,
+      "realtime_x": 0.7748535836673831,
+      "chunk_p99_ms_median": 12.539235998410732,
+      "worst_chunk_ms": 18.147700000554323
+    },
+    "both_noise": {
+      "wall_s_per_iq_second_min_med_max": [
+        2.300231699991855,
+        2.4996475000079954,
+        2.6107042000076035
+      ],
+      "process_cpu_s_per_iq_second_median": 2.46875,
+      "samples_per_wall_second": 409657,
+      "realtime_x": 0.40005640795224184,
+      "chunk_p99_ms_median": 26.24291199143045,
+      "worst_chunk_ms": 37.586199992801994
+    }
+  }
+}

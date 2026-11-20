@@ -1,0 +1,351 @@
+{
+  "index": 0,
+  "trials": 64,
+  "seed": 194911,
+  "osr": 8,
+  "snr_db": -3,
+  "numpy": "2.3.5",
+  "receiver_sha256": "f6f164c53e935aa42a25772242e11fbda867a2dd38f409ad277fda994c59475e",
+  "cases": {
+    "base": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "phase25": {
+      "config": {
+        "phase": 0.25,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "phase50": {
+      "config": {
+        "phase": 0.5,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "clock25": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 25,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "clock-50": {
+      "config": {
+        "phase": 0.0,
+        "ppm": -50,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "clock250": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 250,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "clock1000": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 1000,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "clock3000": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 3000,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 37,
+      "lost_vs_base": 27,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 0
+    },
+    "slope1000": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 1000,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "slope25000": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 25000,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "slope50000": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 50000,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 61,
+      "lost_vs_base": 3,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 7
+    },
+    "slope100000": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 100000,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 0,
+      "lost_vs_base": 64,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 0
+    },
+    "echo2": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 2,
+        "echo": 0.4,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 55,
+      "lost_vs_base": 9,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 2
+    },
+    "echo20": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 20,
+        "echo": 0.7,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 40,
+      "lost_vs_base": 24,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 0
+    },
+    "echo80": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 80,
+        "echo": 0.9,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 24,
+      "lost_vs_base": 40,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 4
+    },
+    "echo250": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 250,
+        "echo": 1,
+        "dc": 0.0,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 0,
+      "lost_vs_base": 64,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 0
+    },
+    "dc": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.1,
+        "gain_db": 0.0,
+        "skew_deg": 0.0
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "iq": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.0,
+        "gain_db": 1,
+        "skew_deg": 5
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "dc_iq": {
+      "config": {
+        "phase": 0.0,
+        "ppm": 0.0,
+        "slope": 0.0,
+        "delay_us": 0.0,
+        "echo": 0.0,
+        "dc": 0.1,
+        "gain_db": 1,
+        "skew_deg": 5
+      },
+      "successes": 64,
+      "lost_vs_base": 0,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": null
+    },
+    "combined": {
+      "config": {
+        "phase": 0.37,
+        "ppm": 25,
+        "slope": 1000,
+        "delay_us": 2,
+        "echo": 0.4,
+        "dc": 0.1,
+        "gain_db": 1,
+        "skew_deg": 5
+      },
+      "successes": 58,
+      "lost_vs_base": 6,
+      "gained_vs_base": 0,
+      "unexpected": 0,
+      "first_paired_loss": 6
+    }
+  }
+}

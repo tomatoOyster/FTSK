@@ -1,0 +1,22 @@
+{
+  "seed": 703,
+  "size": 102400,
+  "radio_used": false,
+  "records": 5764,
+  "erased": 640,
+  "decoded_records": 5124,
+  "file_bytes_verified": 102400,
+  "sha256": "7eee07cddb10afd911d33f931008c67efeec50b1f0b2949b12aab21ee154cbb0",
+  "file_rx": {
+    "bytes": 102400,
+    "transfer_id": "0123456789",
+    "sha256": "7eee07cddb10afd911d33f931008c67efeec50b1f0b2949b12aab21ee154cbb0",
+    "recovered": 640,
+    "duplicates": 2
+  },
+  "samples": 26508474,
+  "signal_seconds": 207.097453125,
+  "elapsed_s": 257.99426599999424,
+  "cfo_hz": 3721.5,
+  "snr_db_per_sample": 6.108339156354676
+}

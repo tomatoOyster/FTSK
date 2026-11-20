@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "seed": 481516,
+  "zip_sha256": "93e54686e83fe8c3c994b0c79e80d913be1335a356e5fcd19646a9a31df88223",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "logical_cpus": 20,
+  "spectral": {
+    "frames": 512,
+    "base": {
+      "lo_hz": -61578.125,
+      "hi_hz": 61546.875,
+      "obw99_hz": 123125.0,
+      "outside_64khz_pct": 0.0
+    },
+    "device": {
+      "lo_hz": -61296.875,
+      "hi_hz": 61265.625,
+      "obw99_hz": 122562.5,
+      "outside_64khz_pct": 0.035570781820646165
+    },
+    "papr_db_min_median_p95_max": {
+      "base_active": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "device_active": [
+        3.300701379776001,
+        4.206325531005859,
+        4.226139569282532,
+        4.235210418701172
+      ],
+      "device_burst": [
+        3.8255155086517334,
+        4.730923652648926,
+        4.750883150100708,
+        4.75969123840332
+      ]
+    }
+  }
+}

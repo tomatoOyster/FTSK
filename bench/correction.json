@@ -1,0 +1,58 @@
+{
+  "seed": 481520,
+  "sha256": {
+    "frame.py": "e43d2d2600ef9df58834d42266326c45ef7518ffb4bc37e477c7b78a67d01bfd",
+    "radio.py": "642c244eae50305a44b7afc425efc0004a15b129458c3b58285e2db5781494a4",
+    "receiver.py": "f6f164c53e935aa42a25772242e11fbda867a2dd38f409ad277fda994c59475e",
+    "wide_rx.py": "bc956be6b83ef032f42b1c01d6f74fabde5fc371c38d0035e3677530682bd394"
+  },
+  "sample_clock_ppm": 0,
+  "payload": "0000000000000000000000000000000000000000000000000000000000000000",
+  "conditions": [
+    {
+      "cfo_hz": -6000,
+      "n": 24,
+      "snr_db": -3,
+      "ok_narrow_oracle_wide": [
+        0,
+        24,
+        24
+      ],
+      "duplicates": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cfo_hz": 6000,
+      "n": 24,
+      "snr_db": -3,
+      "ok_narrow_oracle_wide": [
+        0,
+        24,
+        24
+      ],
+      "duplicates": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cfo_hz": 18300,
+      "n": 24,
+      "snr_db": -3,
+      "ok_narrow_oracle_wide": [
+        0,
+        24,
+        23
+      ],
+      "duplicates": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}
