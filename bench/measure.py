@@ -11,7 +11,7 @@ import time
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-ARCHIVE = HERE.parent / 'ftsk4-v1.zip'
+ARCHIVE = HERE.parent / 'fixtures' / 'ftsk4-v1.zip'
 sys.path.insert(0, str(ARCHIVE))  # pin original source independent of working tree edits
 import frame
 import radio

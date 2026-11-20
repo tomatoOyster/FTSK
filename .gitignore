@@ -14,11 +14,9 @@ build/
 
 # 由源码重新生成的发布压缩包
 FTSK-*-source.zip
-ftsk4-v1.zip
 
 # 本地收发与录音产物
 *.cf32
-!example.cf32
+!examples/example.cf32
 message.*
 captured*
-*.json.zip

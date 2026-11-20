@@ -7,16 +7,23 @@ import sys
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
-SUBDIRS = ('cpp','bench','channels')
-ALLOWED_EXT = {'.py','.cpp','.md','.json','.jsonl','.bin','.cf32','.txt'}
+SUBDIRS = {'docs': {'.md'},
+           'tests': {'.py'},
+           'examples': {'.bin', '.cf32'},
+           'fixtures': {'.zip'},
+           'evidence': {'.jsonl', '.txt'},
+           'bench': {'.py', '.json', '.md'},
+           'channels': {'.py', '.json', '.md'},
+           'cpp': {'.py', '.cpp', '.hpp', '.md'}}
 
 
 def contents():
     # Scope packaging to reviewed source, evidence and examples; exclude host binaries and user IQ captures.
-    paths = [p for p in ROOT.iterdir() if p.is_file() and (p.suffix in {'.py','.md'} or p.name in
-             {'example.bin','example.cf32','ftsk4-v1.zip','soak-50min.jsonl','soak-release.jsonl','requirements.txt','test-report.txt'})]
-    paths += [p for sub in SUBDIRS for p in (ROOT/sub).glob('*') if p.is_file() and p.suffix in {'.py','.cpp','.hpp','.md','.json'}]
-    return sorted(paths, key=lambda p:p.relative_to(ROOT).as_posix())
+    paths = [p for p in ROOT.iterdir() if p.is_file() and p.suffix in {'.py', '.md', '.txt'}
+             and p.name != 'test-report.txt']
+    paths += [p for sub, suffixes in SUBDIRS.items()
+              for p in (ROOT/sub).glob('*') if p.is_file() and p.suffix in suffixes]
+    return sorted(paths, key=lambda p: p.relative_to(ROOT).as_posix())
 
 
 def create(path):
@@ -27,7 +34,7 @@ def create(path):
             buf=p.read_bytes()
             manifest[rel]=hashlib.sha256(buf).hexdigest()
             z.writestr(rel,buf)
-        z.writestr('MANIFEST.json', json.dumps({'version':'FTSK software release 1.1','sha256':manifest},indent=2))
+        z.writestr('MANIFEST.json', json.dumps({'version':'FTSK v0.0.2-demo','sha256':manifest},indent=2))
     return verify(path)
 
 

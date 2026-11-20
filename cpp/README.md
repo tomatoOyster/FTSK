@@ -9,7 +9,7 @@ The encoder and decoder use only the C++17 standard library. One input frame con
 The acquisition path uses a differential lag-one header gate, a 1024-point radix-2 FFT over the dehopped header to select a carrier offset in ±6 kHz, local coherent timing refinement and a two-half phase-slope frequency refinement. It then uses the same slot projection, padding and CRC checks as aligned mode. Chunk sizes of at least 256 samples are recommended for performance. Python's exhaustive receiver does not have the differential prescreen and can recover packets the native screen rejects near threshold. This implementation does not compensate sustained carrier drift, sample clock skew or overlapping packets.
 
 ```powershell
-.\cpp\ftsk.exe blind example.cf32
+.\cpp\ftsk.exe blind examples/example.cf32
 python -B cpp/test_blind.py cpp/ftsk.exe
 ```
 
@@ -21,9 +21,9 @@ Run from the project root. Windows with MinGW GCC in PowerShell:
 
 ```powershell
 g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic cpp/ftsk.cpp -o cpp/ftsk.exe
-.\cpp\ftsk.exe encode example.bin cpp/encoded.cf32
+.\cpp\ftsk.exe encode examples/example.bin cpp/encoded.cf32
 .\cpp\ftsk.exe decode cpp/encoded.cf32 cpp/decoded.bin
-fc.exe /b example.bin cpp/decoded.bin
+fc.exe /b examples/example.bin cpp/decoded.bin
 python -B cpp/test_interop.py cpp/ftsk.exe
 ```
 
@@ -37,9 +37,9 @@ Linux or macOS shell with a C++17 compiler:
 
 ```sh
 c++ -std=c++17 -O2 -Wall -Wextra -Wpedantic cpp/ftsk.cpp -o cpp/ftsk
-./cpp/ftsk encode example.bin cpp/encoded.cf32
+./cpp/ftsk encode examples/example.bin cpp/encoded.cf32
 ./cpp/ftsk decode cpp/encoded.cf32 cpp/decoded.bin
-cmp example.bin cpp/decoded.bin
+cmp examples/example.bin cpp/decoded.bin
 python3 -B cpp/test_interop.py cpp/ftsk
 ```
 

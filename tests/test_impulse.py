@@ -21,7 +21,7 @@ def archived_module(name, source):
     return module
 
 
-with zipfile.ZipFile(Path(__file__).with_name('ftsk4-v1.zip')) as archive:
+with zipfile.ZipFile(Path(__file__).resolve().parents[1]/'fixtures'/'ftsk4-v1.zip') as archive:
     base_source = archive.read('frame.py')
     base = archived_module('_v1_frame', base_source)
     rx_source = archive.read('receiver.py')

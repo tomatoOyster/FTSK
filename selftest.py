@@ -16,8 +16,8 @@ def selftest():
     root=Path(__file__).resolve().parent
     with tempfile.TemporaryDirectory() as tmp:
         work=Path(tmp)
-        payload=(root/'example.bin').read_bytes()
-        vector=np.fromfile(root/'example.cf32', '<c8')
+        payload=(root/'examples'/'example.bin').read_bytes()
+        vector=np.fromfile(root/'examples'/'example.cf32', '<c8')
         gen=encode_frame(payload)
         np.testing.assert_allclose(gen,vector,atol=2e-6,rtol=0)
         pkts=Receiver().feed(vector)

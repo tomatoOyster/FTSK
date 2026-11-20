@@ -1,9 +1,9 @@
 # FTSK-4 / FTSK-8 packet profiles
 
-The optional dual-profile modem encodes either rate and identifies it from the received sync waveform. Profile 4 calls the existing v1 encoder and body decoder directly. The original command-line tools continue to use profile 4. [Dual-profile module](<profiles.py>) · [v1 format](<README.md>)
+The optional dual-profile modem encodes either rate and identifies it from the received sync waveform. Profile 4 calls the existing v1 encoder and body decoder directly. The original command-line tools continue to use profile 4. [Dual-profile module](../profiles.py) · [v1 format](../README.md)
 
 ```powershell
-python profiles.py encode example.bin slow.cf32 --profile 8
+python profiles.py encode examples/example.bin slow.cf32 --profile 8
 python profiles.py decode slow.cf32
 python profiles.py measure --frames 100 --seed 2026 --snr -7
 python -m unittest -v test_profiles test_packets
@@ -51,4 +51,4 @@ The command above draws 100 payloads, start delays, phases, and carrier offsets 
 
 At equal power the longer packet spends 2.75 dB more energy. Matching the complete-packet energy reduces the amplitude of *all* slow-profile samples by `sqrt(4480/8448)`, including its header. The third result includes acquisition losses as well as body-decoding losses. These counts describe this fixed-seed AWGN experiment, including sampling uncertainty. Hardware sensitivity and sustained real-time throughput require separate measurements.
 
-The regression suite exercises noisy adjacent 8→4→4→8 frames across arbitrary chunk boundaries, corruption, false header retention, end-of-stream decoding, pure noise, and three altered slots in every slow symbol. [Regression tests](<test_profiles.py>)
+The regression suite exercises noisy adjacent 8→4→4→8 frames across arbitrary chunk boundaries, corruption, false header retention, end-of-stream decoding, pure noise, and three altered slots in every slow symbol. [Regression tests](../tests/test_profiles.py)

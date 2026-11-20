@@ -7,16 +7,16 @@ FT/1 将任意二进制文件切成可独立编号的片段，一个片段占一
 在项目目录执行以下命令，第三条命令输出两个相同的 SHA-256。
 
 ```powershell
-python transfer.py encode example.bin capture.cf32 --id 0123456789
+python transfer.py encode examples/example.bin capture.cf32 --id 0123456789
 python transfer.py decode capture.cf32 received.bin --id 0123456789
-Get-FileHash example.bin, received.bin -Algorithm SHA256
+Get-FileHash examples/example.bin, received.bin -Algorithm SHA256
 python -m unittest -v test_transfer
 ```
 
 编码器每次写一帧小端 CF32（采样率 128 kHz）。解码器每次读取 4096 个复采样，调用流式 v1 接收机，在 IQ 输入结束时验证整文件。编码端的输出路径 `-` 表示标准输出；解码端的输入路径 `-` 表示标准输入。使用支持原样传递二进制字节的管道，例如 Windows `cmd.exe`，如下可直接运行。
 
 ```cmd
-python transfer.py encode example.bin - | python transfer.py decode - received-pipe.bin
+python transfer.py encode examples/example.bin - | python transfer.py decode - received-pipe.bin
 ```
 
 编码器的摘要写入标准错误，不会混入二进制管道。默认创建新文件，目标已存在时返回错误。`--force` 允许**成功验证后**原子替换已有接收文件。写普通 IQ 文件也采用临时文件原子发布。未指定 `--id` 时，编码器随机生成 5 字节 ID；接收机选中首个有效 FT/1 记录的 ID，忽略其他传输。混有多项任务的捕获请指定所需 ID。重发相同文件时可以复用同一个 ID，把两次捕获按采样顺序接入同一接收机，或将两份 CF32 二进制拼接后解码。内容变化时换新 ID。
@@ -26,10 +26,10 @@ python transfer.py encode example.bin - | python transfer.py decode - received-p
 所有 FT/1 记录均为 32 字节，因此也可选用 8 时段物理帧，不需更改文件格式、校验或修复逻辑：
 
 ```powershell
-python transfer.py encode example.bin slow.cf32 --profile 8
+python transfer.py encode examples/example.bin slow.cf32 --profile 8
 python transfer.py decode slow.cf32 restored.bin --profile auto
 python radio_file.py rx restored-sdr.bin --freq $freqHz --rate 1024000 --profile auto --seconds 30
-python radio_file.py tx example.bin --freq $freqHz --rate 1024000 --profile 8
+python radio_file.py tx examples/example.bin --freq $freqHz --rate 1024000 --profile 8
 ```
 
 默认收发配置仍为 `4`。收端选择 `8` 只搜索慢速帧；选择 `auto` 可在同一传输内混用两种速率的记录。对于相同帧数，慢速理想空口时间和 CF32 字节数为 `66 ms × 帧数` 和 `67584 × 帧数`（不含 SDR 滤波和保护样本）。接收端应预留处理时间并设置足够的 `--seconds`。SDR 选项兼容关系及预算见[配置规范](<PROFILES.md>)。

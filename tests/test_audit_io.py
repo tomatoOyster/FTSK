@@ -43,7 +43,7 @@ class FiniteIQTests(unittest.TestCase):
             samples = np.zeros(4098, '<c8')
             samples[-1] = np.nan
             samples.tofile(path)
-            proc = subprocess.run([sys.executable,'-B',str(Path(__file__).with_name('ftsk.py')),
+            proc = subprocess.run([sys.executable,'-B',str(Path(__file__).resolve().parents[1]/'ftsk.py'),
                                    'packet','decode',str(path)],capture_output=True,text=True,timeout=30)
             self.assertNotEqual(proc.returncode,0)
             self.assertIn('non-finite IQ at sample 4097',proc.stderr)
