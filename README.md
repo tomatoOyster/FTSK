@@ -1,4 +1,4 @@
-# FTSK · 频迹键控收发机
+# FTSK  频迹键控收发机
 
 **v0.0.2-demo** · Python ≥ 3.10 · 仅依赖 NumPy
 
